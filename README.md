@@ -155,7 +155,7 @@ Written to cover taxonomy IDs with no existing benchmark. Solidity 0.8.x. Each c
 
 ## Related
 
-**TRACE pipeline:** https://github.com/Fernan7w7/trace-pipeline
+**TRACE pipeline:** https://github.com/Fernan7w7/LLM-assisted-analysis
 
 ---
 
