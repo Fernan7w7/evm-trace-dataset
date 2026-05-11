@@ -1,0 +1,21 @@
+# External contract repos (not part of this dataset)
+external_contrats/
+
+# Foundry
+out/
+cache/
+broadcast/
+
+# Hardhat / Truffle
+artifacts/
+build/
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,1234 @@
+{
+  "contracts/1.1_reentrancy/positive/0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "PERSONAL_BANK.Collect — msg.sender.call.value(_am)() before balances decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "PrivateBank.CashOut — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "ACCURAL_DEPOSIT.Collect — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "PRIVATE_ETH_CELL.Collect — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x561eac93c92360949ab1f1403323e6db345cbf31.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "BANK_SAFE.Collect — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "TokenBank.WithdrawToHolder — _addr.call.value(_wei)() before Holders[_addr]-=_wei — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "U_BANK.Collect — msg.sender.call.value(_am)() before acc.balance-=_am — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x7a8721a9d64c74da899424c1b52acbf58ddc9782.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "PrivateDeposit.CashOut — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "W_WALLET.Collect — msg.sender.call.value(_am)() before acc.balance-=_am — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x8c7777c45481dba411450c228cb692ac3d550344.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "ETH_VAULT.CashOut — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "X_WALLET.Collect — msg.sender.call.value(_am)() before acc.balance-=_am — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "ETH_FUND.CashOut — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "PENNY_BY_PENNY.Collect — msg.sender.call.value(_am)() before acc.balance-=_am — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "DEP_BANK.Collect — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Private_Bank.CashOut — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "PrivateBank.CashOut — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "ETH_VAULT.CashOut — msg.sender.call.value(_am)() before balance decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "MONEY_BOX.Collect — msg.sender.call.value(_am)() before acc.balance-=_am — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "WALLET.Collect — msg.sender.call.value(_am)() before acc.balance-=_am — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "MY_BANK.Collect — msg.sender.call.value(_am)() before acc.balance-=_am — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/etherbank.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "EtherBank.withdrawBalance — ETH sent via call.value before userBalances zeroed — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/etherstore.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "EtherStore.withdrawFunds — call.value before balance and timestamp update — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/reentrance.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Reentrance.withdraw — msg.sender.call.value(_amount)() before balances[msg.sender] -= _amount — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/reentrancy_bonus.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "withdrawReward — recipient.call.value(amountToWithdraw) before claimedBonus[recipient]=true — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/reentrancy_cross_function.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "withdrawBalance — cross-function reentrancy; call.value before userBalances zeroed — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/reentrancy_dao.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "ReentrancyDAO.withdrawAll — msg.sender.call.value(oCredit)() before credit[msg.sender]=0 — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/reentrancy_insecure.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.5.x",
+    "fuzzer_confirmed": false,
+    "notes": "withdrawBalance — call.value before userBalances zeroed — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/reentrancy_simple.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "withdrawBalance — call.value(userBalance[msg.sender])() before balance zeroed — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/simple_dao.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "SimpleDAO.withdraw — msg.sender.call.value(amount)() before credit[msg.sender]-=amount — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/spank_chain_payment.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "SpankChain LCOpenTimeout — .transfer() sends ETH before delete Channels[_lcID] — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/DAO.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "unknown",
+    "fuzzer_confirmed": false,
+    "notes": "The DAO (2016) — splitDAO via withdrawRewardFor: recipient.call.value(reward)() before paidOut updated — original DAO hack source"
+  },
+  "contracts/1.1_reentrancy/positive/Reentrancy.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "withdrawBalance — msg.sender.call.value(userBalance[msg.sender])() before userBalance[msg.sender]=0 — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/PrivateBank.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "PrivateBank.CashOut honeypot — real reentrancy lure: msg.sender.call.value(_am)() before balances decrement — SWC-107"
+  },
+  "contracts/1.1_reentrancy/positive/LendfMe_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "LendfMe / dForce 2020-04 — ERC-777 tokensToSend hook re-enters withdraw() before crETH balance decrements; $25M drained"
+  },
+  "contracts/1.1_reentrancy/positive/Cream_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.7.x-0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Cream Finance / AMP 2021-08 — ERC-777 tokensReceived callback re-enters borrow() before AMP borrow limit updates"
+  },
+  "contracts/1.1_reentrancy/positive/XSURGE_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.7.x-0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "XSURGE 2021-08 — surge.sell() sends ETH via .call to attacker receive() before internal balance decreases; re-buys at deflated price"
+  },
+  "contracts/1.1_reentrancy/positive/Agave_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Agave Finance 2022-03 — Aave v2 fork: liquidationCall triggers onTokenTransfer before collateral state finalizes; attacker re-enters borrow()"
+  },
+  "contracts/1.1_reentrancy/positive/JAY_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "JAY Token 2022-12 — buyJay() calls attacker fake ERC-721 transferFrom() which re-enters sell() before buy state settles"
+  },
+  "contracts/1.1_reentrancy/positive/Curve_exp01.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Curve Finance pETH/ETH 2023-07 — Vyper compiler reentrancy-lock bug; remove_liquidity() re-enters add_liquidity() via ETH receive() before lock engages"
+  },
+  "contracts/1.2_reentrancy_state_only/positive/modifier_reentrancy.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.2",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "airDrop modifier — Bank(msg.sender).supportsToken() (no ETH) re-enters before claimed[msg.sender]=true; double tokenBalance credit — SWC-107"
+  },
+  "contracts/1.2_reentrancy_state_only/positive/SpankChain_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.2",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "SpankChain 2018-10 — malicious token transfer() re-enters LCOpenTimeout() before channel state closed; no ETH during re-entry"
+  },
+  "contracts/1.2_reentrancy_state_only/positive/BurgerSwap_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.2",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "BurgerSwap 2021-05 — malicious token transferFrom() re-enters swapExactTokensForTokens() before reserves updated; state-only"
+  },
+  "contracts/1.2_reentrancy_state_only/positive/Grim_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.2",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Grim Finance 2021-12 — malicious token transferFrom() re-enters depositFor() before shares minted; double share minting — no ETH"
+  },
+  "contracts/1.2_reentrancy_state_only/positive/HundredFinance_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.2",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Hundred Finance 2022-03 — ERC-677 onTokenTransfer fires during redeem() before state updates; re-enters borrow() on xDAI market"
+  },
+  "contracts/1.2_reentrancy_state_only/positive/Paribus_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.2",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Paribus 2023-04 — Compound v2 fork: pETH.redeem() triggers attacker receive() before borrow limit updates; re-enters borrow(); state-only"
+  },
+  "contracts/1.2_reentrancy_state_only/positive/dForce_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.2",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "dForce 2023-02 — read-only reentrancy: Curve remove_liquidity() triggers attacker fallback before pool reserves sync; liquidateBorrow() uses stale collateral price"
+  },
+  "contracts/1.4_dos_external/positive/auction.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.4",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "DosAuction.bid() — currentFrontrunner.send(currentBid) must succeed before state advances; reverting recipient locks auction permanently — SWC-113"
+  },
+  "contracts/1.4_dos_external/positive/send_loop.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.4",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "refundAll() — require(send()) inside loop; one reverting recipient blocks all refunds — SWC-113"
+  },
+  "contracts/1.4_dos_external/positive/nssc_auction.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.4",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "DosAuction.bid() — reverting frontrunner fallback locks auction permanently — SWC-113"
+  },
+  "contracts/1.4_dos_external/positive/list_dos.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "1.4",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "CrowdFundBad.refundDos() — transfer() inside require() in creditor loop; single reverting address halts all refunds — SWC-113"
+  },
+  "contracts/2.1_access_control/positive/incorrect_constructor_name1.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "IamMissing() misnamed constructor — public post-deployment; no CHECK before owner=msg.sender — SWC-105, SWC-118"
+  },
+  "contracts/2.1_access_control/positive/incorrect_constructor_name2.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "missing() misnamed constructor — public post-deployment; no CHECK before owner=msg.sender — SWC-105, SWC-118"
+  },
+  "contracts/2.1_access_control/positive/incorrect_constructor_name3.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Constructor() misnamed (capital C) — public post-deployment; no CHECK before owner=msg.sender — SWC-105, SWC-118"
+  },
+  "contracts/2.1_access_control/positive/multiowned_vulnerable.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "newOwner(address) — no onlyOwner guard; any caller appended to owners array — SWC-105"
+  },
+  "contracts/2.1_access_control/positive/parity_wallet_bug_2.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "WalletLibrary.initWallet() — only_uninitialized does not check msg.sender; anyone reinitializes and seizes ownership — Parity 2017"
+  },
+  "contracts/2.1_access_control/positive/rubixi.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "DynamicPyramid() misnamed constructor (old contract name); public callable post-deployment; no CHECK before creator=msg.sender — SWC-118"
+  },
+  "contracts/2.1_access_control/positive/unprotected0.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "changeOwner(address) — no modifier or require(msg.sender==owner); any caller overwrites owner — SWC-105"
+  },
+  "contracts/2.1_access_control/positive/wallet_02_refund_nosub.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "refund() — transfers balances[msg.sender] without zeroing balance first; no guard before ETH CALL — SWC-105"
+  },
+  "contracts/2.1_access_control/positive/wallet_03_wrong_constructor.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "initWallet() misnamed constructor — public post-deployment; no CHECK before creator=msg.sender — SWC-118"
+  },
+  "contracts/2.1_access_control/positive/incorrect_constructor.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "IamMissing() misnamed constructor — public post-deployment; any caller seizes ownership — SWC-118"
+  },
+  "contracts/2.1_access_control/positive/Rubixi.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Rubixi source code — DynamicPyramid() misnamed constructor; anyone resets creator and takes fee collection — SWC-118"
+  },
+  "contracts/2.1_access_control/positive/Unprotected.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "changeOwner(address) — no onlyOwner modifier; any caller overwrites owner state variable — SWC-105"
+  },
+  "contracts/2.1_access_control/positive/WalletLibrary.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Parity WalletLibrary source — initWallet()/initMultiowned() public with no access guard; anyone reinitializes owner list — Parity 2017"
+  },
+  "contracts/2.1_access_control/positive/Parity_first_hack_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Parity Multisig 2017-07 — initWallet() has no owner check; attacker becomes owner then drains via execute(); $30M stolen"
+  },
+  "contracts/2.1_access_control/positive/Parity_kill_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Parity Multisig 2017-11 — unprotected initWallet() on shared WalletLibrary; attacker calls kill() to self-destruct library; $280M frozen"
+  },
+  "contracts/2.1_access_control/positive/Bancor_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Bancor 2020-06 — safeTransferFrom() deployed public with no caller check; drains tokens from victims who approved the contract"
+  },
+  "contracts/2.1_access_control/positive/Pickle_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Pickle Finance 2020-11 — swapExactJarForJar() accepts arbitrary targets[] with no caller validation; attacker executes privileged operations"
+  },
+  "contracts/2.1_access_control/positive/88mph_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "88mph 2021-06 — NFT contract init() has no initialized guard; attacker reinitializes to become owner and mints/burns tokens freely"
+  },
+  "contracts/2.1_access_control/positive/PolyNetwork_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Poly Network 2021-08 — cross-chain manager calls EthCrossChainData without checking target; attacker bypasses onlyOwner via crafted proof; $600M"
+  },
+  "contracts/2.1_access_control/positive/DaoMaker_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "DaoMaker 2021-09 — init() has no onlyOwner/initialized guard; attacker reinitializes to become owner and drains via emergencyExit()"
+  },
+  "contracts/2.1_access_control/positive/Visor_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.7.x-0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Visor Finance 2021-12 — deposit() accepts arbitrary from address with no msg.sender check; attacker mints unlimited vVISR shares"
+  },
+  "contracts/2.1_access_control/positive/Templedao_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.1",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "TempleDAO 2022-10 — migrateStake() has no caller restriction; attacker claims all staked LP tokens directly"
+  },
+  "contracts/2.2_unprotected_delegatecall/positive/FibonacciBalance.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.2",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Fallback passes msg.data to fibonacciLibrary.delegatecall with no CHECK; attacker calls setStart() to overwrite storage slot 0 — SWC-112"
+  },
+  "contracts/2.2_unprotected_delegatecall/positive/parity_wallet_bug_1.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.2",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Wallet fallback does _walletLibrary.delegatecall(msg.data) with no caller/data check; attacker calls initWallet via delegatecall to seize ownership — Parity 2017, SWC-112"
+  },
+  "contracts/2.2_unprotected_delegatecall/positive/proxy.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.2",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "forward(address callee, bytes _data) — callee.delegatecall(_data) with no check on callee; arbitrary code in proxy storage context — SWC-112"
+  },
+  "contracts/2.3_missing_validation/positive/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call() / .send() return value — silent failure on external call — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked owner.send() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x39cfd754c85023648bf003bea2dd498c5612abfa.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked _addr.call.value(_wei) return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x4051334adc52057aca763453820cb0e045076ef3.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x524960d55174d912768678d8c606b4d50b79d7b1.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x5aa88d2901c68fda244f1d0584400368d2c8e739.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x610495793564aed0f9c7fc48dc4c7c9151d34fd6.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked _addr.call.value(_wei) return value in WithdrawToHolder — silent ETH loss — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x663e4229142a27f00bafb5d087e1e730648314c3.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x78c2a1e91b52bca4130b6ed9edd9fbcfd4671c37.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x7a4349a749e59a5736efb7826ee3496a2dfd5489.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x7d09edb07d23acb532a82be3da5c17d9d85806b4.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x806a6bd219f162442d992bdc4ee6eba1f2c5a707.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked _dst.call.value(_value)(_data) return value — silent failure — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xbaa3de6504690efb064420d89e871c27065cdd52.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xd5967fed03e85d1cce44cab284695b41bc675b5c.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked Owner.send() / adr.call.value() return values — silent failure — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xe82f0742a71a02b9e9ffc142fdcb6eb1ed06fb87.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xec329ffc97d75fe03428ae155fc7793431487f63.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call() return value — silent failure on external call — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xf2570186500a46986f3139f65afedc2afe4f445d.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xf29ebe930a539a60279ace72c707cba851a57707.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Unchecked .call.value() return value — silent failure on ETH transfer — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/etherpot_lotto.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "winner.send(subpot) return value ignored — silent payout failure possible — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/king_of_the_ether_throne.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "claimThrone() — multiple address.send(compensation) calls with return values ignored — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/lotto.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "winner.send(winAmount) and msg.sender.send(this.balance) return values unchecked; silent prize loss — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/mishandled.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "msg.sender.send(amountToWithdraw) return value discarded — failed withdrawal silently ignored — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/unchecked_return_value.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "callnotchecked() — callee.call() return value not assigned or checked — SWC-104"
+  },
+  "contracts/2.3_missing_validation/positive/KingOfTheEtherThrone.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.3",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "KotET source code — claimThrone() multiple address.send(compensation) return values ignored; silent loss on failed compensation — SWC-104"
+  },
+  "contracts/2.4_unprotected_selfdestruct/positive/simple_suicide.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "2.4",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "suicideAnyone() — selfdestruct(msg.sender) with no owner CHECK; any caller destroys contract and drains balance — SWC-106"
+  },
+  "contracts/3.1_block_dependency/positive/blackjack.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Deck.deal() seeds card values from block.number, block.timestamp, block.blockhash — miner-influenceable — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/etheraffle.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "chooseWinner() seeds randomness from block.coinbase, block.difficulty, block.number — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/ether_lotto.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "uint(sha3(block.timestamp)) % 2 determines winner — READ(block.timestamp) → WRITE — SWC-116"
+  },
+  "contracts/3.1_block_dependency/positive/governmental_survey.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "invest() stores block.timestamp; resetInvestment checks block.timestamp < lastTimestamp+ONE_MINUTE — SWC-116"
+  },
+  "contracts/3.1_block_dependency/positive/guess_the_random_number.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "Constructor computes answer as keccak256(blockhash(block.number-1), now) — predictable on-chain — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/lottery.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "makeBet() uses block.number % 2 as win condition — READ(block.number) → WRITE — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/lottopollo.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "randomGen() returns block.timestamp directly; controls ETH transfer in payOut — SWC-116"
+  },
+  "contracts/3.1_block_dependency/positive/lucky_doubler.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "rand() uses block.blockhash(block.number-1) to select payout index — predictable blockhash — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/old_blockhash.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "settle() uses blockhash(guesses[msg.sender].block) — returns 0 for blocks >256 old; attacker waits and guesses correctly — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/random_number_generator.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "random() uses block.timestamp, block.number, blockhash(seed) as entropy — all miner-influenceable — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/roulette.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "now % 15 == 0 as win condition; now for per-block bet guard — READ(block.timestamp) → CHECK — SWC-116"
+  },
+  "contracts/3.1_block_dependency/positive/smart_billions.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "calcHashes()/won() use block.blockhash() as lottery result; salt=block.timestamp at state level — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/timed_crowdsale.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "block.timestamp >= 1546300800 gates sale-finished state — READ(block.timestamp) → CHECK — SWC-116"
+  },
+  "contracts/3.1_block_dependency/positive/theRun.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "unknown",
+    "fuzzer_confirmed": false,
+    "notes": "randomGen() seeds from block.timestamp and block.number/blockhash; READ(block attrs) → CHECK/WRITE awards WinningPot — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/Lottery.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "unknown",
+    "fuzzer_confirmed": false,
+    "notes": "OpenAddressLottery — seeds secret from block.timestamp, block.difficulty, block.coinbase, blockhash; honeypot but real block-dependency — SWC-120"
+  },
+  "contracts/3.1_block_dependency/positive/SpankChain_Payment.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.1",
+    "source": "not_so_smart_contracts",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "SpankChain source — all settlement/timeout gates use now (block.timestamp) via require(now > ...) controlling fund releases — SWC-116"
+  },
+  "contracts/3.2_txorigin_misuse/positive/mycontract.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.2",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "sendTo() uses require(tx.origin == owner) — phishing contract in call chain bypasses check — SWC-115"
+  },
+  "contracts/3.2_txorigin_misuse/positive/phishable.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.2",
+    "source": "smartbugs",
+    "solidity_version": "0.4.x",
+    "fuzzer_confirmed": false,
+    "notes": "withdrawAll() uses require(tx.origin == owner) — attacker tricks owner into calling malicious contract which relays call — SWC-115"
+  },
+  "contracts/3.3_oracle_manipulation/positive/HarvestFinance_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.3",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Harvest Finance 2020-10 — flash-loans move Curve y-pool price; vault reads Curve spot price as oracle; READ(manipulated price) → WRITE; $34M"
+  },
+  "contracts/3.3_oracle_manipulation/positive/bEarn_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.3",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "bEarn Finance 2021-05 — flash-loan loop on deposit/emergencyWithdraw; vault fails to sync Alpaca LP price; stale READ(price) → inflated WRITE"
+  },
+  "contracts/3.3_oracle_manipulation/positive/Spartan_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.3",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Spartan Protocol 2021-05 — flash-loans pump pool balances; removeLiquidity() reads raw balanceOf() as spot price; READ(inflated balance) → WRITE"
+  },
+  "contracts/3.3_oracle_manipulation/positive/Cream_2_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.3",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Cream Finance 2021-10 — inflates yUSD vault pricePerShare via donation; borrows against over-valued crYUSD; READ(manipulated pricePerShare) → WRITE; $130M"
+  },
+  "contracts/3.3_oracle_manipulation/positive/Market_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.3",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Market.xyz 2022-10 — read-only reentrancy via Curve remove_liquidity(); stale Beefy/Curve LP price during re-entry window; over-borrow of miMATIC"
+  },
+  "contracts/3.3_oracle_manipulation/positive/Sentiment_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.3",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Sentiment 2023-04 — read-only reentrancy: Balancer exitPool() ETH callback before balances sync; borrows against stale over-valued LP oracle price"
+  },
+  "contracts/3.3_oracle_manipulation/positive/Conic_exp.sol": {
+    "vulnerable": true,
+    "taxonomy_id": "3.3",
+    "source": "defihacklabs",
+    "solidity_version": "0.8.x",
+    "fuzzer_confirmed": false,
+    "notes": "Conic Finance 2023-07 — read-only reentrancy: Curve remove_liquidity() ETH callback before virtual price updates; handleDepeggedCurvePool() uses stale inflated LP price"
+  }
+}

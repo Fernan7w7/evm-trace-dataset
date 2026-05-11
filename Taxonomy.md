@@ -44,14 +44,15 @@ The attacker poisons what the contract reads from the environment before the con
 
 ### Class 1 — Operation Ordering Violations
 
-| ID | Vulnerability | Precondition | IR Signal | TRACE Status | Dataset |
-|---|---|---|---|---|---|
-| 1.1 | Reentrancy (all variants) | CALL → WRITE | `cei_safe_order = False` | Implemented | ✅ |
-| 1.3 | Delegatecall state corruption | DELEGATECALL → WRITE | `has_delegatecall = True` + WRITE follows | Implemented | ✅ |
-| 1.4 | DoS via external call | CALL before REVERT path | `has_external_call = True`, no revert guard | Implemented | ✅ |
-| 1.5 | Silent termination | SELFDESTRUCT before EMIT | SELFDESTRUCT with no prior EMIT | Future work | ⚠️ |
+| ID | Vulnerability | Precondition | Attack Vector | Op Types | IR Signal | TRACE Status | Dataset |
+|---|---|---|---|---|---|---|---|
+| 1.1 | Reentrancy (value transfer) | CALL → WRITE | Malicious fallback re-enters before balance update | CALL, TRANSFER, WRITE | `cei_safe_order = False` | Implemented | ✅ |
+| 1.2 | Reentrancy (state only) | CALL → WRITE (no value) | Malicious fallback manipulates state before WRITE | CALL, WRITE | `cei_safe_order = False` | Implemented | ✅ |
+| 1.3 | Delegatecall state corruption | DELEGATECALL → WRITE | Attacker-controlled target overwrites storage | DELEGATECALL, WRITE | `has_delegatecall = True` + WRITE follows | Implemented | ✅ |
+| 1.4 | DoS via external call | CALL before REVERT path | Malicious fallback blocks state advancement | CALL, WRITE, REVERT | `has_external_call = True`, no revert guard | Implemented | ✅ |
+| 1.5 | Silent termination | SELFDESTRUCT before EMIT | Contract terminates without event trace | SELFDESTRUCT, EMIT | SELFDESTRUCT with no prior EMIT | Future work | ⚠️ |
 
-**Note on 1.1:** All reentrancy variants from the literature (with ETH transfer, without ETH transfer, same effect, negative events) collapse into a single taxonomy ID. From an attacker's perspective the precondition is identical: CALL → WRITE. The payload differs; the exploitation entry point does not.
+**Note on 1.1 / 1.2:** Reentrancy is split by whether ETH value is transferred. 1.1 involves a value-bearing CALL (balance drain); 1.2 exploits state-only re-entry with no ETH transfer. The structural precondition is identical (CALL → WRITE); the op type signature distinguishes them.
 
 **Note on 1.5:** No corresponding entry exists in SWC, OpenSCV, or Iuliano & Di Nucci (2026). This ID represents a structurally possible operation sequence pattern derived from EVM semantics. Practical exploitability is an open empirical question.
 
