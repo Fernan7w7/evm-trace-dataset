@@ -8,11 +8,11 @@ A curated, labeled dataset of Ethereum smart contracts organized by a trace-base
 
 | Source | Contracts | IDs Covered | Solidity Version |
 |---|---|---|---|
-| SmartBugs Curated | ~120 | 1.1, 1.4, 2.1, 2.3, 3.1, 3.2 | 0.4.x |
-| Not-So-Smart-Contracts | ~25 | 1.1, 1.3, 2.1, 2.2, 2.4 | 0.4–0.5.x |
-| DeFiHackLabs | ~10 | 1.1, 2.1, 3.3 | Mixed |
+| SmartBugs Curated | 113 | 1.1, 1.2, 1.4, 2.1, 2.2, 2.3, 2.4, 3.1, 3.2 | 0.4.x–0.5.x |
+| Not-So-Smart-Contracts | 13 | 1.1, 1.4, 2.1, 2.3, 3.1 | 0.4.x |
+| DeFiHackLabs | 28 | 1.1, 1.2, 2.1, 3.3 | 0.7.x–0.8.x |
 | Original (this work) | ~50 | 1.3, 1.5, 2.2, 2.4, 2.5, 3.4 + supplements | 0.8.x |
-| **Total** | **~205** | **All 13 IDs** | Mixed |
+| **Total** | **~205** | **All 14 IDs** | Mixed |
 
 ---
 
@@ -27,6 +27,9 @@ evm-trace-dataset/
 │
 ├── contracts/
 │   ├── 1.1_reentrancy/
+│   │   ├── positive/
+│   │   └── negative/
+│   ├── 1.2_reentrancy_state_only/
 │   │   ├── positive/
 │   │   └── negative/
 │   ├── 1.3_delegatecall_corruption/
@@ -75,23 +78,42 @@ evm-trace-dataset/
 
 ## Taxonomy
 
-Contracts are labeled according to a trace-based vulnerability taxonomy organized into three classes over an 11-type operation system. See `taxonomy.md` for the full reference.
+Contracts are labeled according to a trace-based vulnerability taxonomy organized into three classes over an 11-type operation system. See `Taxonomy.md` for the full reference.
 
-| ID | Class | Vulnerability | Dataset Coverage |
-|---|---|---|---|
-| 1.1 | Class 1 — Ordering | Reentrancy (all variants) | ✅ |
-| 1.3 | Class 1 — Ordering | Delegatecall state corruption | ✅ |
-| 1.4 | Class 1 — Ordering | DoS via external call | ✅ |
-| 1.5 | Class 1 — Ordering | Silent termination | ⚠️ Limited sources — original contracts only |
-| 2.1 | Class 2 — Guard absence | Access control bypass | ✅ |
-| 2.2 | Class 2 — Guard absence | Unprotected delegatecall | ✅ |
-| 2.3 | Class 2 — Guard absence | Missing input/return validation | ✅ |
-| 2.4 | Class 2 — Guard absence | Unprotected selfdestruct | ✅ |
-| 2.5 | Class 2 — Guard absence | Unguarded state deletion | ⚠️ Limited sources — original contracts only |
-| 3.1 | Class 3 — State visibility | Timestamp / block dependency | ✅ |
-| 3.2 | Class 3 — State visibility | tx.origin misuse | ✅ |
-| 3.3 | Class 3 — State visibility | Price oracle manipulation | ✅ |
-| 3.4 | Class 3 — State visibility | Stale state read | ⚠️ Limited sources — original contracts only |
+### Class 1 — Operation Ordering Violations
+
+The attacker exploits a window created by two operations appearing in the wrong sequence.
+
+| ID | Vulnerability | Precondition | Attack Vector | Op Types | Coverage |
+|---|---|---|---|---|---|
+| 1.1 | Reentrancy (value transfer) | `CALL → WRITE` | Malicious fallback re-enters before balance update | CALL, TRANSFER, WRITE | ✅ |
+| 1.2 | Reentrancy (state only) | `CALL → WRITE` (no value) | Malicious fallback manipulates state before WRITE | CALL, WRITE | ✅ |
+| 1.3 | Delegatecall state corruption | `DELEGATECALL → WRITE` | Attacker-controlled target overwrites storage | DELEGATECALL, WRITE | ⚠️ Original only |
+| 1.4 | DoS via external call | `CALL` before REVERT path | Malicious fallback blocks state advancement | CALL, WRITE, REVERT | ✅ |
+| 1.5 | Silent termination | `SELFDESTRUCT` before `EMIT` | Contract terminates without event trace | SELFDESTRUCT, EMIT | ⚠️ Original only |
+
+### Class 2 — Guard Absence Violations
+
+The attacker walks a path with no `CHECK` before a sensitive operation.
+
+| ID | Vulnerability | Precondition | Attack Vector | Op Types | Coverage |
+|---|---|---|---|---|---|
+| 2.1 | Access control bypass | No `CHECK(msg.sender)` before WRITE/CALL | Direct call to restricted function | CHECK, WRITE, CALL | ✅ |
+| 2.2 | Unprotected delegatecall | No `CHECK(target)` before DELEGATECALL | Caller supplies malicious target | DELEGATECALL, CHECK | ✅ |
+| 2.3 | Missing input/return validation | No `CHECK(amount/address/return)` before WRITE | Zero address or bad value passes unchecked | CHECK, WRITE | ✅ |
+| 2.4 | Unprotected selfdestruct | No `CHECK(owner)` before SELFDESTRUCT | Anyone triggers self-destruct | CHECK, SELFDESTRUCT | ✅ |
+| 2.5 | Unguarded state deletion | No `CHECK(auth)` before DELETE | Attacker triggers delete on critical state | CHECK, DELETE | ⚠️ Original only |
+
+### Class 3 — State Visibility Violations *(Future Work)*
+
+The attacker poisons what the contract reads from the environment before it acts on it. Requires READ operation emission in the behavior extractor.
+
+| ID | Vulnerability | Precondition | Attack Vector | Op Types | Coverage |
+|---|---|---|---|---|---|
+| 3.1 | Timestamp / block dependency | `READ(block.timestamp)` → CHECK/WRITE | Miner influences block attributes | READ, CHECK, WRITE | ✅ |
+| 3.2 | tx.origin misuse | `READ(tx.origin)` → CHECK | Phishing contract in call chain | READ, CHECK | ✅ |
+| 3.3 | Price oracle manipulation | `READ(external price)` → WRITE | Flash loan distorts price feed | READ, WRITE, STATICCALL | ✅ |
+| 3.4 | Stale state read | `READ(state var)` → WRITE | Stale value read between updates | READ, WRITE | ⚠️ Original only |
 
 ---
 
