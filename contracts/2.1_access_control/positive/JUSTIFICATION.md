@@ -14,6 +14,8 @@
 | `wallet_02_refund_nosub.sol` | `refund()` | Transfers `balances[msg.sender]` without zeroing the balance first and without a guard — effectively no CHECK before ETH CALL |
 | `wallet_03_wrong_constructor.sol` | `initWallet()` | Misnamed constructor pattern — no CHECK before `creator = msg.sender` WRITE |
 
+| `ownership_transfer.sol` | `initiateTransfer(address)` | Two-step ownership transfer where the first step has no `onlyOwner` guard. Any caller can set `pendingOwner` to themselves, then call `acceptOwnership()` to complete the takeover. `acceptOwnership()` is correctly guarded — the missing check is one step earlier, making the vulnerability easy to miss in a per-function review. | `negative/ownership_transfer.sol` |
+
 **Out-of-scope access_control contracts (NOT included):**  
 - `arbitrary_location_write_simple.sol` — array-length underflow enabling arbitrary storage slot write (arithmetic/storage collision)  
 - `mapping_write.sol` — arbitrary storage slot write via large mapping key (storage collision)  
